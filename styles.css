@@ -7,35 +7,16 @@ body {
 }
 
 header {
-    background-image: url('ppp.jpg');
-
+    background-image: url('shutterstock_1753694129-scaled-1.webp');
+    background-size: 1400px 490px;
     color: #ffffff;
     padding: 20px;
     text-align: center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-
-
-h1 
-{
+h1 {
     font-size: 100px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    
-    text-decoration: none;
 }
 
 section {
@@ -43,13 +24,233 @@ section {
     margin: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background: navy;
+.btn-navy {
+    background-color: navy; /* Navy background */
+    color: white; /* White text */
+    border: none; /* Remove border */
 }
 
-#lessons{
-    background-color: #ffffff;
-    
+.btn-navy:hover {
+    background-color: darkblue; /* Darker shade on hover */
+}
+
+@media screen and
+ (max-height: 300px) {
+  ul{
+    margin-top: 40px;
+  }
+ }
+
+ li{
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+ }
+
+ a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+ }
+
+ a:hover:after{
+  width: 100%;
+  left:0;
+  background-color: #00fffc;
+
+ }
+
+
+/* nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 50px;
+  justify-content: center;
+}
+
+a{
+  position: relative;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 28px;
+  padding: 0.5rem 1rem;
+  transition: color 0.25s;
+}
+
+a::after{
+position: absolute;
+content: "";
+inset: 0;
+background: white;
+scale: 1 0;
+z-index: -1;
+transition: 0.45s;
+border-radius: 10px;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:hover::after{
+  scale: 1 1;
+} */
+
+footer {
+    background-color: navy; /* Set footer background to navy */
+    color: white; /* Set footer text color to white */
+}
+
+button {
+    color: navy; /* Ensure button text is navy */
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card{
+    border-radius: 25px;
+    background-color: #FFF;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  /* .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070F4;
+    border-radius: 0px 0px 0 25px;
+  } */
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  }
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+  /* .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid navy;
+  } */
+  .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: navy;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button:hover{
+    background: navy;
+  }
+  
+  .swiper-navBtn{
+    color: navy;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: navy;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: navy;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: navy;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
+
+.containervalio{
+  margin: 100px 0 0 200px;
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 10px ;
+}
+
+.containervalio img{
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid grey;
+  transition: all ease-in-out 0.5s;
+}
+
+.containervalio img:hover{
+  width: 25%;
 }
